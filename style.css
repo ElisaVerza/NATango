@@ -29,7 +29,7 @@ hr {
     position: relative;
     background-color: rgba(255, 0, 0, 0.7);
     padding: 1.1%;
-    transition: 0.5s;
+    transition: 0.5s ease;
     border-radius: 50px;
     overflow: hidden;
     box-shadow: 0 8px 15px rgba(0,0,0,.2);
@@ -41,10 +41,11 @@ hr {
     width: 0;
     overflow: hidden;
     transition: 0.5s;
+
 }
 
 .nav input:checked ~ .menu {
-    width: 45vh;
+    width: 20vw;
 }
 
 .menu li {
@@ -67,6 +68,7 @@ hr {
     height: 40px;
     cursor: pointer;
     opacity: 0;
+    transition: 0.5s;
 }
 
 .nav span {
