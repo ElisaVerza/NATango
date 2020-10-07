@@ -103,7 +103,7 @@ hr {
 .grid-container {
     display: grid;
     grid-template-columns: 40%;
-    width: 100%;
+    width: 60%;
     margin-left: 3%;
 }
 .grid-container-icons {
