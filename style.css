@@ -29,6 +29,10 @@ body {
     width: 30%;
     margin-left: 1%;
 }
+.my-hr-1 {
+    width: 30%;
+    margin: 3% 35% 2% 35%;
+}
 .grid-container {
     display: grid;
     grid-template-columns: 40%;
@@ -40,6 +44,7 @@ body {
     display: grid;
     grid-template-columns: 33.33% 33.33% 33.33%;
     width: 100%;
+    height: 50vh;
 }
 
 .grid-container-icons {
@@ -47,6 +52,13 @@ body {
     grid-template-columns: 15% 15% 15%;
     width: 45%;
     margin: 3%;
+}
+
+.grid-container-card {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 80%;
+    margin: 3% 10% 3% 10%;
 }
 
 .center-text {
@@ -75,6 +87,13 @@ body {
     align-items: center;
     color: red;
     font-size: 250%;
+    font-family: 'Caveat', cursive;
+    font-weight: 100;
+}
+
+.link {
+    color: red;
+    font-size: 150%;
     font-family: 'Caveat', cursive;
     font-weight: 100;
 }
@@ -226,7 +245,7 @@ body {
 .card {
     top: 50%;
     width: 95%;
-    height: 150%;
+    height: 100%;
     border-radius: 40px;
     /*box-shadow: 5px 5px 30px 7px rgba(255,255,255,0.25), -5px -5px 30px 7px rgba(255,255,255,0.22);*/
     box-shadow: 10px 10px 10px rgba(255, 0, 0, 0.5);
