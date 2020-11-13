@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html>
 <head>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NATango - Home</title>
     <meta charset="UTF-8">
     <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
@@ -10,10 +10,12 @@
     <link rel="stylesheet" href="style.css" media="screen">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+
 </head>
 
 <body id="main">
     <script>
+
         var open = 0;
         var width = window.innerWidth
             || document.documentElement.clientWidth
@@ -81,16 +83,22 @@
             <div class="grid-container-circles">
 
                 <div class="card" style="background: url('./ambiente.jpg');">
-                    <div class="titles" style="margin-top: 25%;">Ambiente</div>
-                    <div class="center-text">Vieni a imparare e vivere la passione del Tango Argentino con noi. Non dimenticherai la esperienza di ballare e conoscere tante persone.</div>
+                    <div id="title1" class="titles" style="margin-top: 25%;">Ambiente</div>
+                    <div id="card1">
+                        <div class="center-text">Vieni a imparare e vivere la passione del Tango Argentino con noi. Non dimenticherai la esperienza di ballare e conoscere tante persone.</div>
+                    </div>
                 </div>
                 <div class="card" style="background: url('./qualita.jpg');">
-                    <div class="titles" style="margin-top: 25%;">Qualità</div>
-                    <div class="center-text">Qualità tecnica maschile, femminile e di coppia, metodologia e pedagogia nel modo di proporre i movimenti e la musicalità, istoria e codici del ballo e la milonga.</div>
+                    <div id="title2" class="titles" style="margin-top: 25%;">Qualità</div>
+                    <div id="card2">
+                        <div class="center-text">Qualità tecnica maschile, femminile e di coppia, metodologia e pedagogia nel modo di proporre i movimenti e la musicalità, istoria e codici del ballo e la milonga.</div>
+                    </div>
                 </div>
                 <div class="card" style="background: url('./divertimento.jpg');">
-                    <div class="titles" style="margin-top: 25%;">Divertimento</div>
-                    <div class="center-text">Il Tango non è solo un ballo, è anche tanto altro, musica, storia, cultura, socialità, divertimento, passione e processo che inizia a casa come un rito.</div>
+                    <div id="title3" class="titles" style="margin-top: 25%;">Divertimento</div>
+                    <div id="card3">
+                        <div class="center-text">Il Tango non è solo un ballo, è anche tanto altro, musica, storia, cultura, socialità, divertimento, passione e processo che inizia a casa come un rito.</div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -143,6 +151,13 @@
         </div>
     </div>
     <hr style="margin: 0; border-color: red;" />
+    <div class="fourth">
+        <div class="your-class">
+            <div>your content</div>
+            <div>your content</div>
+            <div>your content</div>
+        </div>
+    </div>
 
     <footer class="site-footer" id="foot">
         <hr>
@@ -172,4 +187,18 @@
             </ul>
         </div>
     </footer>
+
+
+
+    <script src="fittext.js"></script>
+    <script type="text/javascript">
+
+        fitText(document.getElementById('card1'), 2.0);
+        fitText(document.getElementById('card2'), 2.0);
+        fitText(document.getElementById('card3'), 2.0);
+        fitText(document.getElementById('title1'), 0.7);
+        fitText(document.getElementById('title2'), 0.7);
+        fitText(document.getElementById('title3'), 0.7);
+    </script>
 </body>
+</html>
