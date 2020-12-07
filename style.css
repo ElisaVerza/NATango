@@ -13,6 +13,16 @@ body {
     margin: 0;
     background-color: black;
 }
+
+.bio {
+    font-size: 3vmin;
+    line-height: 200%;
+    display: none;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+}
+
 .first {
     background-image: url('./fondo.jpg');
     background-size: cover;
@@ -44,6 +54,17 @@ body {
     width: 30%;
     margin: 0 35% 2% 35%;
 }
+
+.border {
+    border-top: solid 1px;
+    border-bottom: solid 1px;
+    border-color: red;
+    padding: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5%;
+}
 .grid-container {
     display: grid;
     grid-template-columns: 40%;
@@ -61,8 +82,8 @@ body {
 .grid-container-three {
     display: grid;
     grid-template-columns: 33.33% 33.33% 33.33%;
-    width: 80%;
-    margin: 5% 10% 5% 10%;
+    width: 100%;
+    margin: 5% 0% 5% 0%;
 }
 
 .grid-container-location {
@@ -89,6 +110,7 @@ body {
 .grid-container-card {
     display: grid;
     grid-template-columns: 50% 50%;
+    column-gap: 2%;
     width: 80%;
     margin: 3% 10% 0 10%;
     padding-bottom: 3%;
